@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?><project name="S.I.G.A.I" company="VTV" webLink="http://" view-date="2022-06-29" view-index="0" gantt-divider-location="671" resource-divider-location="300" version="3.2.3240" locale="es_ES">
+    <description/>
+    <view zooming-state="default:2" id="gantt-chart">
+        <field id="tpd3" name="Nombre" width="408" order="0"/>
+        <field id="tpd4" name="Fecha de inicio" width="118" order="1"/>
+        <field id="tpd5" name="Fecha de fin" width="144" order="2"/>
+        <option id="filter.completedTasks" value="false"/>
+        <option id="color.recent"><![CDATA[#ffffff]]></option>
+    </view>
+    <view id="resource-table">
+        <field id="0" name="Nombre" width="210" order="0"/>
+        <field id="1" name="Función" width="86" order="1"/>
+    </view>
+    <!-- -->
+    <calendars>
+        <day-types>
+            <day-type id="0"/>
+            <day-type id="1"/>
+            <default-week id="1" name="default" sun="1" mon="0" tue="0" wed="0" thu="0" fri="0" sat="1"/>
+            <only-show-weekends value="false"/>
+            <overriden-day-types/>
+            <days/>
+        </day-types>
+    </calendars>
+    <tasks empty-milestones="true">
+        <taskproperties>
+            <taskproperty id="tpd0" name="type" type="default" valuetype="icon"/>
+            <taskproperty id="tpd1" name="priority" type="default" valuetype="icon"/>
+            <taskproperty id="tpd2" name="info" type="default" valuetype="icon"/>
+            <taskproperty id="tpd3" name="name" type="default" valuetype="text"/>
+            <taskproperty id="tpd4" name="begindate" type="default" valuetype="date"/>
+            <taskproperty id="tpd5" name="enddate" type="default" valuetype="date"/>
+            <taskproperty id="tpd6" name="duration" type="default" valuetype="int"/>
+            <taskproperty id="tpd7" name="completion" type="default" valuetype="int"/>
+            <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
+            <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
+        </taskproperties>
+        <task id="0" name="FASE 1 INSTALACION Y CONFIGURACION" color="#8cb6ce" meeting="false" start="2022-05-02" duration="9" complete="0" thirdDate="2022-05-02" thirdDate-constraint="0" expand="true">
+            <notes><![CDATA[-----------------------------------------
+  1. INSTALACION 
+----------------------------------------
+
+   1.1 INSTALACION DE SISTEMA OPERATIVO UBUNTU 20.04 LTS .
+   1.2 INSTALACION DE PAQUETERIA O REPOSITORES .
+   1.2 INSTALACION DE SERVIDOR WEB APACHE2 .
+   1.3 INSTALACION DE SERVIDOR BASE DE DATOS MYSQL .
+   1.5 INSTALACION DE PHPMYADMIN .
+   1.6 INSTALACION DE LENGUAJE DE PROGRAMACION PHP 7.4 . 
+   1.7 INSTALACION DE EDITOR VISUAL STUDIO CODE 12.3 .
+   1.8 INSTALACION DE REPOSITORES GITHUB 
+----------------------------------------------------------------------------------------------------------   
+------------------------------------------
+   2 . CONFIGURACION 
+------------------------------------------
+
+    2.1 CONFIGURACION DE LA MAQUINA IP FIJA 
+    2.2 CONFIGURACION DE LLAVE PUBLICA Y PRIVADA 
+    2.3 CONFIGURACION DE SSH Y SSHFS  
+    2.4 CONFIGURACION DE CONEXIONES REMOTA 
+    2.5 CONFIGURACION DE APACHE2 
+    2.6 CONFIGURACION DE EL SERVIDOR DE BASE DE DATOS 
+    2.7 CONFIGURACION DEL LENGUAJE DE PROGRAMACION PHP , PDO 
+    2.8 CONFIGURACION DE GITHUB ]]></notes>
+            <depend id="1" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="1" name="FASE 2 BASE DE DATOS" color="#8cb6ce" meeting="false" start="2022-05-13" duration="11" complete="0" thirdDate="2022-04-20" thirdDate-constraint="0" expand="true">
+            <notes><![CDATA[--------------------------  
+   1.CREACION 
+--------------------------
+
+    1.1  CREACION DE LAS TABLAS DE LA BASE DE DATOS 
+    1.2  CREACION DE LAS CLAVES PRIMARIAS DE CADA TABLA 
+    1.3  CREAR RELACIONES ENTRE LAS TABLAS
+    1.4  CREAR CLAVES SEGUNDARIAS A LAS TABLAS INDICE.
+-----------------------------------------------------------------------------------------------------------------------------------------------     
+  2. NORMALIZACION 
+------------------------------------
+
+   2.1 PRIMERA FORMA NORMAL (1NF)
+
+   2.2  SEGUNDA FORMA NORMAL  (2NF)
+
+   2.3 TERCERA  FORMA NORMAL  (3NF)
+
+
+  
+    
+]]></notes>
+            <depend id="2" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="2" name="FASE 3  FRONTEND" color="#8cb6ce" meeting="false" start="2022-05-30" duration="5" complete="0" thirdDate="2022-04-27" thirdDate-constraint="0" expand="true">
+            <notes><![CDATA[---------------------------------------------------------------------------- 
+  CREACION DE LA PARTE VISUAL FRONTEND
+----------------------------------------------------------------------------
+
+   1. CREACION DEL LOGIN 
+   2. CREACION PAGINA PRINCIPAL INDEX 
+   3. CREACION MENU 
+   4 .CREACION CUERPO
+   5. CREACION FOOTER 
+   6. CREACION DE LA PAGINA USUARIO
+   7. CREACION DE LA PAGINA BIENES 
+   8. CREACION DE LA PAGINA REPORTES
+   9. CREACION DE LA PAGINA MODULOS 
+   10. CREACION DE LA PAGINA MOVIMIENTOS  
+   11. CREACION DE LA PAGINA GRAFICAS 
+   12 . CREACAION DE LA PAGINA ADMINISTRAR 
+   13. CREACION DE LOS MENSAJES DE ALERTAS 
+
+
+-------------------------------------------------------------------------------------------------------------]]></notes>
+            <depend id="3" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="3" name="FASE 4  BACKEND" color="#ffffff" meeting="false" start="2022-06-06" duration="10" complete="0" thirdDate="2022-04-27" thirdDate-constraint="0" expand="true">
+            <notes><![CDATA[
+-----------------------------------------------------------------------------------------------------------
+VALIDACION Y INTERACCIÓN CON LOS USUARIOS Y LA BASE DE DATOS
+-----------------------------------------------------------------------------------------------------------
+
+ 1.  VALIDACION DE LOGIN CON LA BASE DE DATOS 
+ 2.  VALIDACION DEL PERFIL DE USUARIO 
+ 3 . CRUD ( USUARIOS)
+ 4.  CRUD (BIENES)
+ 5.  CRUD ( REPORTES)
+ 6.  CRUD ( MODULOS)
+ 7.  CRUD ( MOVIMIENTOS)
+ 8.  CRUD ( GRAFICAS) 
+ 9.  CRUD (ADMINISTRAR)
+10. CREACION DE  GRAFICAS DEL MODULO DE BIENES 
+11 .CREACION DE REPORTES DE MOVIMIENTOS.
+12 .GRAFICAS Y REPORTES DE ADMINISTRAR .
+13. REPORTES EN TODOS LOS MODULOS 
+
+
+ 
+
+ ]]></notes>
+            <depend id="4" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="4" name="FASE 5 DEPURACION Y MODIFICACIONES" color="#ffffff" meeting="false" start="2022-06-20" duration="4" complete="0" thirdDate="2022-05-12" thirdDate-constraint="0" expand="true">
+            <notes><![CDATA[--------------------------------------------
+ MODIFICACIONES 
+-------------------------------------------
+
+   1.  VERIFICAR TODAS LAS PAGINAS 
+   2.  VERIFICAR TODAS LAS VALIDACIONES 
+   3.  VERIFICAR TODOS LAS INSTRUCCIONES SQL 
+   4.  VERIFICAR LA VELOCIDAD DE LA PAGINA 
+   5.  VERIFICAR LA SEGURIDAD 
+   6.  VERIFICAR QUE SEA RESPONSIVE 
+   7.  VERIFICAR EN TODOS LOS NAVEGADORES
+   8.  VERIFICAR LA BASE DE DATOS  
+   9.  VERIFICAR LAS EXTENCIONES DE PHP 
+   10. ANALISIS DE LAS PRUEBAS FINALES  ]]></notes>
+            <depend id="5" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="5" name="FASE 6 REUNION FINAL CON EL EQUIPO DE TRABAJO" color="#ffffff" meeting="false" start="2022-06-24" duration="1" complete="0" thirdDate="2022-04-27" thirdDate-constraint="0" expand="true">
+            <notes><![CDATA[---------------------------------
+REUNION FINAL
+---------------------------------
+
+   1. PRESENTACIONES DEL PROYECTO FINAL OFICINA
+   2. REUNION CON LOS COMPAÑEROS 
+   3. OBSERVACIONES DEL SISTEMA FINAL  
+
+
+]]></notes>
+            <depend id="6" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="6" name="FASE 7 MODIFICACIONES FINALES" color="#ffffff" meeting="false" start="2022-06-27" duration="3" complete="0" thirdDate="2022-06-06" thirdDate-constraint="0" expand="true">
+            <notes><![CDATA[------------------------------------------
+ MODIFICACIONES FINALES
+------------------------------------------
+
+   1. MODIFICACIONES FINALES BASE DE DATOS 
+    
+   2. MODIFICACIONES FINALES DE FRONTEND
+ 
+   3. MODDIFICACIONES FINALES DE BACKEND
+
+   4. DEPURACION DE LA BASE DE DATOS 
+
+   5. PRUEBAS FINALES 
+
+   
+
+
+
+
+  ]]></notes>
+            <depend id="7" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="7" name="FASE 8 PRESENTACION DEL SISTEMA" color="#ffffff" meeting="false" start="2022-06-30" duration="1" complete="0" thirdDate="2022-04-28" thirdDate-constraint="0" expand="true">
+            <notes><![CDATA[
+
+
+
+
+
+
+-------------------------------------------------------------------------------------------------------------
+                     
+
+
+                                PRESENTACION DEL SISTEMA
+
+
+-------------------------------------------------------------------------------------------------------------
+
+
+
+
+     
+
+]]></notes>
+        </task>
+    </tasks>
+    <resources/>
+    <allocations/>
+    <vacations/>
+    <previous/>
+    <roles roleset-name="Default"/>
+</project>
